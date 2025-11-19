@@ -1,3 +1,11 @@
+"""
+patient.py
+
+This module defines the Patient-related logic for the healthcare system.
+For this project, patients will eventually be linked to personal injury
+cases so that legal teams can track treatment progress and medical history
+for each client.
+"""
 import streamlit as st
 from datetime import datetime, date
 import database as db
@@ -321,3 +329,29 @@ class Patient:
                 st.write('Here are the details of the patient you searched for:')
                 show_patient_details(c.fetchall())
             conn.close()
+def to_personal_injury_summary(patient_record):
+    """
+    Convert a generic patient record into a simplified dictionary
+    that can be used by the personal injury case tracking workflow.
+
+    Parameters
+    ----------
+    patient_record : object or dict
+        A patient instance or dictionary from the existing system.
+
+    Returns
+    -------
+    dict
+        A dictionary containing only the key information needed
+        for personal injury case tracking (e.g., name, ID,
+        primary provider, and recent visit info).
+    """
+    # NOTE: This function is a placeholder and will be extended
+    # once the project defines the exact fields required.
+    summary = {
+        "id": getattr(patient_record, "id", None),
+        "name": getattr(patient_record, "name", None),
+        "primary_provider": getattr(patient_record, "primary_provider", None),
+        "last_visit_date": getattr(patient_record, "last_visit_date", None),
+    }
+    return summary
