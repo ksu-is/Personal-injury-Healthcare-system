@@ -1,3 +1,10 @@
+"""
+doctor.py
+
+This module manages doctor/provider information in the healthcare system.
+For the personal injury and healthcare project, provider data will be used
+to evaluate which medical partners are most effective for injured clients.
+"""
 import streamlit as st
 from datetime import datetime, date
 import database as db
@@ -336,3 +343,31 @@ class Doctor:
                 st.write('Here are the details of the doctor you searched for:')
                 show_doctor_details(c.fetchall())
             conn.close()
+            def to_marketing_provider_profile(doctor_record):
+    """
+    Create a simplified provider profile that can be used by the
+    marketing team to evaluate which medical providers to continue
+    partnering with.
+
+    Parameters
+    ----------
+    doctor_record : object or dict
+        A doctor/provider instance or dictionary from the existing system.
+
+    Returns
+    -------
+    dict
+        A dictionary with fields that can later be used in reports,
+        such as provider name, department/specialty, and an initial
+        placeholder for referral or outcome metrics.
+    """
+    profile = {
+        "id": getattr(doctor_record, "id", None),
+        "name": getattr(doctor_record, "name", None),
+        "specialty": getattr(doctor_record, "specialty", None),
+        "department": getattr(doctor_record, "department", None),
+        # Placeholder field for future analytics
+        "personal_injury_cases_seen": None,
+    }
+    return profile
+
