@@ -1,40 +1,33 @@
-# Healthcare Management System
+# Medical Provider Management System
 
-> ⚠️ This project is no longer maintained. See the successor project: [[link]](https://github.com/basedavishkar/vitalit-os)
+#  Personal Injury Case & Medical Provider Management System
 
-[![GitHub](https://img.shields.io/badge/GitHub-Healthcare%20Management%20System-blue?style=flat&logo=github)](https://github.com/ashkaaar/healthcare-management-system)
+A Python-based application designed to help personal injury law firms track clients, medical provider communications, treatment progress, and case timelines more efficiently.
 
-## Overview
-This project is a Healthcare Management System developed using Python, designed to facilitate the user-friendly management of patient, doctor, and department records for healthcare facilities. The system utilizes SQLite for efficient database management, Streamlit for the interface, and Pandas for seamless data handling. It incorporates secure access and exclusive features for doctors and medical lab scientists.
+---
 
-## Features
-- Database Management System (DBMS) project for healthcare facilities.
-- User-friendly management of patient, doctor, and department records.
-- Utilizes SQLite for efficient and secure database management.
-- Streamlit-based interface for a seamless user experience.
-- Pandas integration for efficient data handling and analysis.
-- Exclusive features for doctors and medical lab scientists.
+##  Team Members
+- Fernando Garcia 
 
-## Future Features
-- **Appointment Scheduling:** Implement a feature for scheduling patient appointments, enabling better organization and time management for healthcare providers.
-- **Billing and Invoicing:** Integrate billing and invoicing functionalities for managing financial transactions within the healthcare system.
-- **Telehealth Integration:** Explore integration with telehealth solutions to enable remote consultations and medical services.
-- **Enhanced Security Measures:** Implement additional security measures, such as encryption and user authentication enhancements, to ensure the protection of sensitive healthcare data.
-- **Mobile App Compatibility:** Develop a mobile application version for the Healthcare Management System to provide flexibility and accessibility for users on the go.
-- **Integration with Electronic Health Records (EHR):** Explore integration with EHR systems to enhance interoperability and streamline the exchange of patient information.
-- **Data Analytics Dashboard:** Create a dashboard using tools like Plotly or Dash for insightful data analytics and visualization, aiding healthcare administrators in decision-making.
-- **Automated Reporting:** Implement automated reporting features for generating and sending regular reports to relevant stakeholders.
-- **Internationalization (I18n) Support:** Provide support for multiple languages to accommodate users from diverse linguistic backgrounds.
-- **User Training Resources:** Develop user manuals, tutorials, and training resources to ensure healthcare professionals can easily adopt and use the system.
 
-## Installation
-1. Clone the repository: `git clone https://github.com/ashkaaar/healthcare-management-system.git`
-2. Navigate into the directory: `cd healthcare-management-system`
-3. Install the dependencies: `pip install -r requirements.txt`
-4. Start the application: `streamlit run main.py`
+---
 
-## Usage
-1. Access the application through the provided Streamlit interface.
-2. Manage patient, doctor, and department records seamlessly.
-3. Utilize the exclusive features designed for doctors and medical lab scientists.
-4. Refer to the documentation for detailed information on system functionalities.
+##  Project Description
+
+This project is a case-tracking and provider-management system designed specifically for personal injury law firms. The application streamlines collaboration between legal teams, medical providers, and marketing teams by centralizing client treatment data, case progress, provider performance, and communication records.  
+
+The system is intended for mid-sized personal injury firms that currently rely on spreadsheets or manual tracking to make decisions. By digitizing the workflow, the tool helps attorneys and case managers monitor client treatment timelines, ensures medical providers receive timely updates, and gives marketing teams insights into which providers are delivering the best client outcomes.  
+
+Ultimately, the platform enhances efficiency, improves cross-department coordination, and supports data-driven decisions on provider partnerships, all within a single, user-friendly interface.
+
+##  Project Goals
+
+)
+- Store case information  
+- Store medical provider information 
+- Track treatments, appointments, and recommendations  
+- creating dashboard to see progress
+- 
+LAST UPDATE# 
+Cloned system to my local decise
+Review existing mdoels and comparing with my needed folders
